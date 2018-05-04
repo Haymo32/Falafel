@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html>
-  
+<html lang="en">
+
   <head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <meta name="description" content="">
     <meta name="author" content="">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <h1>Mr. Falafel</h1>
-
-<style type="css/text"> water c
-  body {
+    <title>Mr.Falafel</title>
+    <style>
+    body {
   font-family: 'Lora';
   background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  width:100%;
+  font-family: 'Chewy', cursive;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -28,6 +29,14 @@ p {
   line-height: 1.75;
 }
 
+.Mediterranean{
+  font-family: 'Chewy', cursive;
+  font-size:25px;
+}
+
+.nav-item{
+  font-size:20px;
+}
 .text-faded {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -92,6 +101,9 @@ p {
 
 #mainNav .navbar-brand {
   color: #e6a756;
+  font-family: 'Chewy', cursive;
+  font-size:40px;
+  
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -105,7 +117,15 @@ p {
 
 @media (min-width: 992px) {
   #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 0.9rem;
+    font-size: 1.4rem;
+        margin-left :5em;
+        margin-right : 5em;
+    }
+    
+    @media (min-width: 992px) {
+  #mainNav .nav-home {
+            padding-left:45px;
+    
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: rgba(255, 255, 255, 0.4);
@@ -161,7 +181,7 @@ p {
 
 .cta .cta-inner {
   position: relative;
-  padding: 3rem;
+  padding: 0rem;
   margin: 0.5rem;
   background-color: rgba(255, 255, 255, 0.85);
 }
@@ -265,95 +285,96 @@ p {
   font-weight: 100 !important;
 }
 
-  
-  
+
 </style>
 
-</head>
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
-<body>
- <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <span class="site-heading-upper text-primary mb-3">Eat Falafel or eat Dick</span>
-      <span class="site-heading-lower">Falafel nigga</span>
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    
+   
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3"><img src="images/logo.png" alt="Mountain View" width:"130" height="130" >
+</span>
+      <span class="site-heading-lower">Mr.falafel</span>
     </h1>
     
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    
+         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+  <a class="navbar-brand" href="#">MR.FALAFEL</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link nav-home" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Online Orders</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">About us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 
     <section class="page-section clearfix">
       <div class="container">
         <div class="intro">
           <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro.jpg" alt="">
-          <div class="intro-text left-0 text-center bg-faded p-5 rounded">
             <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Fresh Coffee</span>
-              <span class="section-heading-lower">Worth Drinking</span>
+              <span class="section-heading-upper">Amazing Falafels</span>
+              <span class="section-heading-lower">Mediterranean Food</span>
             </h2>
-            <p class="mb-3">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!
+            <p class="mb-3, Mediterranean" style=color:#fff;> Mr.Falafel is a family owned, mediterranean style restaurant located in the West Ridge neighborhood. We specialize in serving appetizing food made to order at a convenient price. Our variety of food ranges from our golden crispy falafel to our signature kefta kebab.
             </p>
-            <div class="intro-button mx-auto">
-              <a class="btn btn-primary btn-xl" href="#">Visit Us Today!</a>
-            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="page-section cta">
+    </section> <section class="page-section cta">
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
             <div class="cta-inner text-center rounded">
               <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">Our Promise</span>
-                <span class="section-heading-lower">To You</span>
+                <span class="section-heading-upper">Mr.Falafel</span>
               </h2>
-              <p class="mb-0">When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
+              
+            <img src="images/o.jpg" alt="Mountain View" wight="250" height="200">
             </div>
           </div>
         </div>
-      </div>
-    </section>
+        
+        
 
-    <footer class="footer text-faded text-center py-5">
+    <footer class="footer text-faded text-center py-5" style=width:100%;>
       <div class="container">
-        <p class="m-0 small">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 small">Copyright &copy; Mr.Falafel 2018</p>
       </div>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
+  </body>
 
-</body>
-
-
-  
-  
 </html>
+ 
