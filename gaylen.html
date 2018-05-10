@@ -23,6 +23,7 @@
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Raleway';
+  text-shadow: 4px 4px #C2BFBF;
 }
 
 p {
@@ -32,18 +33,21 @@ p {
 .Mediterranean{
   font-family: 'Chewy', cursive;
   font-size:25px;
+  text-shadow: 2px 2px black;
+
 }
 
 .nav-item{
   font-size:20px;
 }
+
 .text-faded {
   color: rgba(255, 255, 255, 0.3);
 }
 
 .site-heading {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   text-transform: uppercase;
   line-height: 1;
   font-family: 'Raleway';
@@ -63,10 +67,6 @@ p {
   letter-spacing: 5px;
 }
 
-.page-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
 
 .section-heading {
   text-transform: uppercase;
@@ -97,6 +97,7 @@ p {
 #mainNav {
   background-color: rgba(47, 23, 15, 0.9);
   font-family: 'Raleway';
+  height:140px;
 }
 
 #mainNav .navbar-brand {
@@ -104,11 +105,13 @@ p {
   font-family: 'Chewy', cursive;
   font-size:40px;
   
+  
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 800;
+   
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
@@ -117,14 +120,16 @@ p {
 
 @media (min-width: 992px) {
   #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 1.4rem;
-        margin-left :5em;
-        margin-right : 5em;
+    font-size: 1.2rem;
+        margin-left :2em;
+        margin-right : 2em;
+      
+        
     }
     
     @media (min-width: 992px) {
   #mainNav .nav-home {
-            padding-left:45px;
+            padding-left:430px;
     
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -133,15 +138,6 @@ p {
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
     color: #e6a756;
   }
-}
-
-.btn-xl {
-  font-weight: 700;
-  font-size: 0.8rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .intro {
@@ -181,7 +177,8 @@ p {
 
 .cta .cta-inner {
   position: relative;
-  padding: 0rem;
+  bottom:2.5rem;
+  padding: 3rem;
   margin: 0.5rem;
   background-color: rgba(255, 255, 255, 0.85);
 }
@@ -213,7 +210,7 @@ p {
   .product-item .product-item-title {
     position: relative;
     z-index: 1;
-    margin-bottom: -3rem;
+    margin-bottom: 1rem;
   }
   .product-item .product-item-img {
     position: relative;
@@ -226,23 +223,6 @@ p {
     margin-top: -3rem;
     max-width: 50vw;
   }
-}
-
-.list-hours {
-  font-size: 0.9rem;
-}
-
-.list-hours .list-hours-item {
-  border-bottom: 1px solid rgba(230, 167, 86, 0.5);
-  padding-bottom: .25rem;
-  margin-bottom: 1rem;
-  font-style: italic;
-}
-
-.list-hours .list-hours-item.today {
-  font-weight: bold;
-  color: #e6a756;
-}
 
 @media (min-width: 992px) {
   .list-hours {
@@ -257,6 +237,7 @@ p {
 
 .footer {
   background-color: rgba(47, 23, 15, 0.9);
+
 }
 
 .text-primary {
@@ -285,6 +266,11 @@ p {
   font-weight: 100 !important;
 }
 
+body {
+   background-image: url("images/falafel.jpg");
+ 
+   
+}
 
 </style>
 
@@ -298,83 +284,115 @@ p {
   </head>
 
   <body>
-    
    
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <span class="site-heading-upper text-primary mb-3"><img src="images/logo.png" alt="Mountain View" width:"130" height="130" >
-</span>
-      <span class="site-heading-lower">Mr.falafel</span>
-    </h1>
+       
+        <h1 class="site-heading text-center text-white d-none d-lg-block">
+          <span class="site-heading-upper text-primary mb-3">
+          </span>
+        </h1>
+        
+     
+          <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+          <img src="images/LOGO.png" alt="Mountain View" width:"90" height="90"> <a class="navbar-brand" href="#">MR.FALAFEL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link nav-home" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Online Orders</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">About us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+       
     
     
-         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-  <a class="navbar-brand" href="#">MR.FALAFEL</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link nav-home" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Menu</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Online Orders</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Gallery</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">About us</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-
-    <section class="page-section clearfix">
-      <div class="container">
-        <div class="intro">
-          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro.jpg" alt="">
-            <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Amazing Falafels</span>
-              <span class="section-heading-lower">Mediterranean Food</span>
-            </h2>
-            <p class="mb-3, Mediterranean" style=color:#fff;> Mr.Falafel is a family owned, mediterranean style restaurant located in the West Ridge neighborhood. We specialize in serving appetizing food made to order at a convenient price. Our variety of food ranges from our golden crispy falafel to our signature kefta kebab.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> <section class="page-section cta">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <div class="cta-inner text-center rounded">
-              <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">Mr.Falafel</span>
-              </h2>
+        <section class="page-section clearfix">
+          
+          <div class="container">
+            <div class="intro">
               
-            <img src="images/o.jpg" alt="Mountain View" wight="250" height="200">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Amazing Falafels</span>
+                  <span class="section-heading-lower">Mediterranean Food</span>
+                </h2>
+              
+                <p class="mb-3, Mediterranean" style=color:#ffffff;> Mr.Falafel is a family owned, mediterranean style restaurant located in the West Ridge neighborhood. We specialize in serving appetizing food made to order at a convenient price. Our variety of food ranges from our golden crispy falafel to our signature kefta kebab.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
         
-        
+        <section class="page-section cta">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 mx-auto">
+                <div class="cta-inner text-center rounded">
+                  
+                  <h2 class="section-heading mb-4"> <span class="section-heading-upper"></span></span> </h2>
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img class="d-block w-100" src="images/pic.jpg" alt="First slide" style="height:400px" >
+                                </div>
+                                <div class="carousel-item">
+                                  <img class="d-block w-100" src="images/t.jpg" alt="second slide" style="height:400px">
+                                </div>
+                                <div class="carousel-item">
+                                  <img class="d-block w-100" src="images/u.jpg" alt="Third slide" style="height:400px">
+                                </div>
+                                <div class="carousel-item">
+                                  <img class="d-block w-100" src="images/food.jpg" alt="Third slide" style="height:400px">
+                                </div>
+                           
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+     
+           <!-- Bootstrap core JavaScript -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
     <footer class="footer text-faded text-center py-5" style=width:100%;>
       <div class="container">
         <p class="m-0 small">Copyright &copy; Mr.Falafel 2018</p>
       </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        </footer>
+    
+          
 
   </body>
 
 </html>
- 
+your mom gae haha
